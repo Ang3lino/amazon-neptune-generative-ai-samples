@@ -1,0 +1,9 @@
+# Example config for Pulumi stack `dev`.
+# Do not commit real values — copy this file to `Pulumi.dev.yaml` and edit, OR
+# use `pulumi config set ... --secret` for sensitive values.
+
+config:
+  aws:region: us-east-1
+  neptune-min:keyName: my-ec2-keypair-name
+  neptune-min:myIp: "203.0.113.10/32"   # replace with YOUR public IP in CIDR form
+  # neptune-min:instanceClass: db.r5.large   # optional override
