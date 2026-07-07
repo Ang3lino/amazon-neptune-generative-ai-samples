@@ -56,7 +56,7 @@ const bastionSg = new aws.ec2.SecurityGroup("bastion-sg", {
 // Neptune: 8182 only from the bastion security group (reference by id, not CIDR).
 const neptuneSg = new aws.ec2.SecurityGroup("neptune-sg", {
   vpcId: vpc.id,
-  description: "Neptune writer — 8182 from bastion only",
+  description: "Neptune writer - 8182 from bastion only",
   ingress: [{
     protocol: "tcp",
     fromPort: 8182,
