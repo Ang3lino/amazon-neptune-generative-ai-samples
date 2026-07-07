@@ -1,3 +1,43 @@
 .DS_Store
 .ash/
 ash_output/
+
+# Local tooling state (no secrets, but never needed in repo)
+.omo/
+.codegraph/
+.vscode/
+.idea/
+
+# Local Python environments (graph_notebook kernel)
+.venv/
+venv/
+
+# Node
+node_modules/
+
+# Pulumi per-stack config — contains local /32 IP, key pair name, hash salts
+# Pattern matches Pulumi.<stack>.yaml but NOT Pulumi.yaml (the project manifest
+# we deliberately commit) and NOT Pulumi.<stack>.yaml.example (the template)
+Pulumi.*.yaml
+bin/
+.pulumi/
+
+# SSH / cloud credentials — defensive, never commit
+.ssh/
+*.pem
+.aws/
+
+# Terraform (only mentioned for comparison; not in use here)
+.terraform/
+*.tfstate
+*.tfstate.backup
+
+# Jupyter / IPython
+.ipynb_checkpoints/
+
+# OS / editors
+Thumbs.db
+desktop.ini
+*.log
+*.swp
+*~
