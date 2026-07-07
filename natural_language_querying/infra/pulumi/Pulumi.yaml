@@ -1,0 +1,8 @@
+name: neptune-min
+description: Minimum Neptune cluster + bastion SSH tunnel for running the NLQ notebook locally via graph-notebook
+runtime:
+  name: nodejs
+  options:
+    typescript: true
+config:
+  description: Configure with `pulumi config set keyName <your-ec2-keypair-name>` and `pulumi config set myIp <your-public-ip>/32`

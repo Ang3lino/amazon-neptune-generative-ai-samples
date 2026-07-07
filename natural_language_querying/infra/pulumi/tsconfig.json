@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "strict": true,
+    "target": "es2020",
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "ignoreDeprecations": "6.0",
+    "outDir": "bin"
+  },
+  "files": ["index.ts"]
+}

@@ -1,0 +1,19 @@
+{
+  "name": "neptune-min",
+  "version": "0.1.0",
+  "description": "Minimum Neptune cluster + bastion SSH tunnel for running the NLQ notebook locally",
+  "main": "index.ts",
+  "scripts": {
+    "preview": "pulumi preview",
+    "up": "pulumi up",
+    "destroy": "pulumi destroy"
+  },
+  "dependencies": {
+    "@pulumi/aws": "^6.0.0",
+    "@pulumi/pulumi": "^3.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "typescript": "^6.0.3"
+  }
+}
